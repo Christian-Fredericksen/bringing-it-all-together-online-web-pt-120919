@@ -1,13 +1,13 @@
 class Dog 
-  attr_accessor :name, :owner
+  attr_accessor :name, :breed
   attr_reader :id 
   
   @@all = []
   
-  def initialize(id=nil, name, owner)
+  def initialize(id=nil, name, breed)
     @id = id
     @name = name
-    @owner = owner
+    @breed = breed
     @@all << self
   end
   
